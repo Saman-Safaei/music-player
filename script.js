@@ -57,20 +57,20 @@ const musicList = [
   {
     title: 'The Callisto Protocol',
     name: 'callisto',
-    src: '/assets/music/callisto.mp3',
-    cover: '/assets/cover/callisto.jpg',
+    src: '/music-player/assets/music/callisto.mp3',
+    cover: '/music-player/assets/cover/callisto.jpg',
   },
   {
     title: 'The Hellsinger',
     name: 'thehellsinger',
-    src: '/assets/music/thehellsinger.mp3',
-    cover: '/assets/cover/hellsinger.png',
+    src: '/music-player//assets/music/thehellsinger.mp3',
+    cover: '/music-player//assets/cover/hellsinger.png',
   },
   {
     title: 'Through You',
     name: 'through_you',
-    src: '/assets/music/through_you.mp3',
-    cover: '/assets/cover/hellsinger.png',
+    src: '/music-player//assets/music/through_you.mp3',
+    cover: '/music-player//assets/cover/hellsinger.png',
   },
 ]
 
