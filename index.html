@@ -14,36 +14,15 @@
           <img src="/assets/cover/callisto.jpg" alt="cover" />
         </div>
         <div class="music-box__controls">
-          <div>
-            <button class="btn">
-              <svg
-                class="icon"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512">
-                <path
-                  fill="currentColor"
-                  d="M459.5 440.6c9.5 7.9 22.8 9.7 34.1 4.4s18.4-16.6 18.4-29V96c0-12.4-7.2-23.7-18.4-29s-24.5-3.6-34.1 4.4L288 214.3V256v41.7L459.5 440.6zM256 352V256 128 96c0-12.4-7.2-23.7-18.4-29s-24.5-3.6-34.1 4.4l-192 160C4.2 237.5 0 246.5 0 256s4.2 18.5 11.5 24.6l192 160c9.5 7.9 22.8 9.7 34.1 4.4s18.4-16.6 18.4-29V352z" />
-              </svg>
+          <div class="music-box__buttons">
+            <button id="backwardBtn" class="btn">
+              <img class="icon" src="/assets/svg/backward.svg" alt="ctrl">
             </button>
-            <button class="btn">
-              <svg
-                class="icon"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 384 512">
-                <path
-                  fill="currentColor"
-                  d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
-              </svg>
+            <button id="playpauseBtn" class="btn">
+              <img class="icon" src="/assets/svg/play.svg" alt="ctrl">
             </button>
-            <button class="btn">
-              <svg
-                class="icon"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512">
-                <path
-                  fill="currentColor"
-                  d="M500.5 231.4l-192-160C287.9 54.3 256 68.6 256 96v320c0 27.4 31.9 41.8 52.5 24.6l192-160c15.3-12.8 15.3-36.4 0-49.2zm-256 0l-192-160C31.9 54.3 0 68.6 0 96v320c0 27.4 31.9 41.8 52.5 24.6l192-160c15.3-12.8 15.3-36.4 0-49.2z" />
-              </svg>
+            <button id="forwardBtn" class="btn">
+              <img class="icon" src="/assets/svg/forward.svg" alt="ctrl">
             </button>
           </div>
           <div class="music-box__duration-bar">
@@ -52,5 +31,6 @@
         </div>
       </div>
     </div>
+    <script src="/script.js"></script>
   </body>
 </html>
