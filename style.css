@@ -17,11 +17,13 @@ p {
 
 body {
   line-height: 1.5;
-  background: #27272a;
+  background: #1f2937;
   -webkit-font-smoothing: antialiased;
 }
 
-img,
+img {
+  display: block;
+}
 picture,
 video,
 canvas,
@@ -47,7 +49,96 @@ h6 {
   overflow-wrap: break-word;
 }
 
+@keyframes rotate {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
 #root,
 #__next {
   isolation: isolate;
+}
+
+.btn {
+  background: transparent;
+  padding: 0;
+  border: 0 none;
+  cursor: pointer;
+}
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: white;
+}
+.music-box__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.music-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 18rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.music-box__img-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+}
+.music-box__img-container::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 1.8rem;
+  height: 1.8rem;
+  background: #1f2937;
+  border-radius: 50%;
+  box-shadow: inset 0 0 1px 2px rgba(0, 255, 251, 0.2);
+}
+.music-box__img-container img {
+  border-radius: 50%;
+  width: 100%;
+  aspect-ratio: 1;
+  animation: rotate 10s infinite linear;
+  box-shadow: 0 0 1px 2px rgba(0, 255, 251, 0.2);
+  animation-play-state: paused;
+  background: white;
+}
+
+.music-box__duration-bar {
+  width: 100%;
+  height: 4px;
+  background: rgb(65, 65, 65);
+  border-radius: 9999px;
+}
+.music-box__played {
+  width: 0%;
+  height: 4px;
+  background: rgb(0, 255, 251);
+  border-radius: 9999px;
 }
