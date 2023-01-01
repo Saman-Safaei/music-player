@@ -17,7 +17,7 @@ p {
 
 body {
   line-height: 1.5;
-  background: #1f2937;
+  background: linear-gradient(to bottom right, #273344, #18202b) fixed;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -90,23 +90,85 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   padding: 1rem;
+  overflow-y: auto;
+}
+.musics {
+  display: flex;
+  flex-direction: column;
+  justify-items: stretch;
+  width: 100%;
+  max-width: 18rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  gap: 1rem;
+}
+.musics-list {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  overflow-y: auto;
+  gap: 1rem;
+  padding: 0 1rem 1rem 1rem;
+}
+.musics-list::-webkit-scrollbar {
+  height: 4px;
+  background: rgb(63, 63, 63);
+}
+.musics-list::-webkit-scrollbar-thumb {
+  height: 4px;
+  background: rgb(120, 120, 120);
+}
+.musics-list__item {
+  display: block;
+  width: 5rem;
+  min-width: 5rem;
+  max-width: 5rem;
+}
+.musics-list__item-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 0.4rem;
+}
+.musics-list__item-container::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 1rem;
+  height: 1rem;
+  background: #1f2937;
+  border-radius: 50%;
+  box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.2);
+}
+.musics-list__img {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.2);
+}
+.musics-list__title {
+  text-decoration: none;
+  font-size: 0.7rem;
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+  white-space: nowrap;
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .music-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
-  width: 100%;
-  max-width: 18rem;
-  padding: 1rem;
   border-radius: 1rem;
 }
 .music-box__img-container {
   position: relative;
   width: 100%;
-  aspect-ratio: 1;
+  padding: 0 0.2rem;
 }
 .music-box__img-container::after {
   content: '';
@@ -129,12 +191,17 @@ h6 {
   animation-play-state: paused;
   background: white;
 }
-
+.music-box__title {
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+}
 .music-box__duration-bar {
   width: 100%;
   height: 4px;
   background: rgb(65, 65, 65);
   border-radius: 9999px;
+  margin-bottom: 0.5rem;
 }
 .music-box__played {
   width: 0%;
