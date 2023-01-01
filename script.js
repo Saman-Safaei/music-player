@@ -1,7 +1,7 @@
 const audioApi = new Audio('/assets/music/callisto.mp3')
 
-const pauseIconPath = '/assets/svg/pause.svg'
-const playIconPath = '/assets/svg/play.svg'
+const pauseIconPath = '/music-player/assets/svg/pause.svg'
+const playIconPath = '/music-player/assets/svg/play.svg'
 
 const allMusics = document.getElementsByClassName('musics-list__item')
 const playpauseButton = document.getElementById('playpauseBtn')
@@ -63,14 +63,14 @@ const musicList = [
   {
     title: 'The Hellsinger',
     name: 'thehellsinger',
-    src: '/music-player//assets/music/thehellsinger.mp3',
-    cover: '/music-player//assets/cover/hellsinger.png',
+    src: '/music-player/assets/music/thehellsinger.mp3',
+    cover: '/music-player/assets/cover/hellsinger.png',
   },
   {
     title: 'Through You',
     name: 'through_you',
-    src: '/music-player//assets/music/through_you.mp3',
-    cover: '/music-player//assets/cover/hellsinger.png',
+    src: '/music-player/assets/music/through_you.mp3',
+    cover: '/music-player/assets/cover/hellsinger.png',
   },
 ]
 
