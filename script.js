@@ -1,4 +1,4 @@
-const audioApi = new Audio('/assets/music/callisto.mp3')
+const audioApi = new Audio('/music-player/assets/music/callisto.mp3')
 
 const pauseIconPath = '/music-player/assets/svg/pause.svg'
 const playIconPath = '/music-player/assets/svg/play.svg'
