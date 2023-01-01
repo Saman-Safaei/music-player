@@ -9,25 +9,57 @@
   </head>
   <body>
     <div class="container">
-      <div class="music-box">
-        <div class="music-box__img-container">
-          <img id="disc" src="/assets/cover/callisto.jpg" alt="cover" />
+      <div class="musics">
+        <div class="music-box">
+          <div class="music-box__img-container">
+            <img id="disc" src="/assets/cover/callisto.jpg" alt="cover" />
+          </div>
+          <div class="music-box__controls">
+            <div class="music-box__buttons">
+              <button id="backwardBtn" class="btn">
+                <img class="icon" src="/assets/svg/backward.svg" alt="ctrl" />
+              </button>
+              <button id="playpauseBtn" class="btn">
+                <img class="icon" src="/assets/svg/play.svg" alt="ctrl" />
+              </button>
+              <button id="forwardBtn" class="btn">
+                <img class="icon" src="/assets/svg/forward.svg" alt="ctrl" />
+              </button>
+            </div>
+            <div class="music-box__duration-bar">
+              <div id="playedBar" class="music-box__played"></div>
+            </div>
+            <h3 id="musicTitle" class="music-box__title">The Callisto Protocol</h3>
+          </div>
         </div>
-        <div class="music-box__controls">
-          <div class="music-box__buttons">
-            <button id="backwardBtn" class="btn">
-              <img class="icon" src="/assets/svg/backward.svg" alt="ctrl">
-            </button>
-            <button id="playpauseBtn" class="btn">
-              <img class="icon" src="/assets/svg/play.svg" alt="ctrl">
-            </button>
-            <button id="forwardBtn" class="btn">
-              <img class="icon" src="/assets/svg/forward.svg" alt="ctrl">
-            </button>
-          </div>
-          <div class="music-box__duration-bar">
-            <div id="playedBar" class="music-box__played"></div>
-          </div>
+        <div class="musics-list">
+          <a data-name="callisto" class="musics-list__item" href="#">
+            <div class="musics-list__item-container">
+              <img
+                class="musics-list__img"
+                src="/assets/cover/callisto.jpg"
+                alt="cover" />
+            </div>
+            <h3 class="musics-list__title">The Callisto Protocol</h3>
+          </a>
+          <a data-name="thehellsinger" class="musics-list__item" href="#">
+            <div class="musics-list__item-container">
+              <img
+                class="musics-list__img"
+                src="/assets/cover/hellsinger.png"
+                alt="cover" />
+            </div>
+            <h3 class="musics-list__title">The Hellsinger</h3>
+          </a>
+          <a data-name="through_you" class="musics-list__item" href="#">
+            <div class="musics-list__item-container">
+              <img
+                class="musics-list__img"
+                src="/assets/cover/hellsinger.png"
+                alt="cover" />
+            </div>
+            <h3 class="musics-list__title">Through You</h3>
+          </a>
         </div>
       </div>
     </div>
