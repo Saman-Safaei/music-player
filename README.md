@@ -7,7 +7,7 @@ a simple music player with selectable musics
 - The Hellsinger - Through You
 
 ## Links
-Comming soon ...
+[Click to visite the music player](https://saman-safaei.github.io/music-player)
 
 ## Screenshots
 ![screenshot](./assets/screenshots/screenshot1.png)
